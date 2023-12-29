@@ -66,7 +66,7 @@ export const SectionCard = ({ repository, ...props}: SectionCardProps) => {
                     {repository.description}
                 </p>
             </main>
-            <footer className="flex w-full h-auto mt-auto flex-1 items-end">
+            <footer className="flex w-full h-auto mt-auto flex-1 items-end justify-center sm:justify-normal">
                 <div className="flex items-center space-x-5">
                     <div className="text-sm font-medium text-slate-200 flex items-center space-x-2">
                         <CiStar size={25} />
@@ -91,14 +91,6 @@ export const SectionCard = ({ repository, ...props}: SectionCardProps) => {
                     </div>
                 </div>
             </footer>
-            {/* <a href={repository.html_url} target="_blank" rel="noreferrer">
-            </a>
-            <div className="flex flex-col justify-center items-center">
-                <a href={repository.html_url} target="_blank" rel="noreferrer">
-                    <h2 className="text-xl font-bold text-gray-900">{repository.name}</h2>
-                </a>
-                <p className="text-gray-500 text-sm">{repository.description}</p>
-            </div> */}
         </motion.div>
     )
 }
